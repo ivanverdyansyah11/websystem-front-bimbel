@@ -1,0 +1,227 @@
+/* FONTFACE */
+@font-face {
+    font-family: 'urbanist-regular';
+    src: url('../font/urbanist/Urbanist-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'urbanist-medium';
+    src: url('../font/urbanist/Urbanist-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'urbanist-semibold';
+    src: url('../font/urbanist/Urbanist-SemiBold.ttf') format('truetype');
+}
+/* END FONTFACE */
+
+
+/* VARIABLE */
+:root {
+    --primary-color: 16, 200, 67;
+    --dark-color: 50, 60, 71;
+    --light-color: 255, 255, 255;
+    --light-blur-color: 244, 245, 250;
+
+    --regular-font: 'urbanist-regular', Arial, Helvetica, sans-serif;
+    --medium-font: 'urbanist-medium', Arial, Helvetica, sans-serif;
+    --semibold-font: 'urbanist-semibold', Arial, Helvetica, sans-serif;
+}
+/* END VARIABLE */
+
+
+/* COMPONENT */
+body {
+    overflow-x: hidden;
+    background-color: rgba(var(--light-blur-color), 1);
+    position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin-bottom: 0;
+    line-height: 150% !important;
+}
+
+a {
+    color: rgba(var(--dark-color), 1);
+    text-decoration: none;
+    display: inline-block;
+}
+
+* {
+    font-family: var(--medium-font);
+    color: rgba(var(--dark-color), 1);
+    transition: 300ms !important;
+}
+/* END COMPONENT */
+
+
+/* SIDEBAR */
+.sidebar {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(var(--light-color), 1);
+    padding: 32px;
+}
+
+.sidebar.mobile {
+    width: 260px;
+    position: absolute;
+    top: 0;
+    left: -260px;
+    bottom: 0;
+}
+
+.sidebar.mobile.active {
+    left: 0;
+}
+
+.sidebar .sidebar-link {
+    margin-top: 42px;
+    gap: 6px;
+}
+
+.sidebar .sidebar-link .link-item {
+    border-radius: 4px;
+    background-color: rgba(var(--light-color), 1);
+    padding: 12px;
+    font-size: 0.962rem;
+}
+
+.sidebar .sidebar-link .link-item:hover,
+.sidebar .sidebar-link .link-item.active {
+    background-color: rgba(var(--primary-color), 1);
+    color: rgba(var(--light-color), 1);
+}
+
+.sidebar .sidebar-link .link-item .dashboard-icon,
+.sidebar .sidebar-link .link-item .lesson-icon,
+.sidebar .sidebar-link .link-item .class-schedule-icon,
+.sidebar .sidebar-link .link-item .task-icon,
+.sidebar .sidebar-link .link-item .grade-icon,
+.sidebar .sidebar-link .link-item .attendance-icon,
+.sidebar .sidebar-link .link-item .payroll-icon,
+.sidebar .sidebar-link .link-item .profile-icon,
+.sidebar .sidebar-link .link-item .dashboard-icon-active,
+.sidebar .sidebar-link .link-item .lesson-icon-active,
+.sidebar .sidebar-link .link-item .class-schedule-icon-active,
+.sidebar .sidebar-link .link-item .task-icon-active,
+.sidebar .sidebar-link .link-item .grade-icon-active,
+.sidebar .sidebar-link .link-item .attendance-icon-active,
+.sidebar .sidebar-link .link-item .payroll-icon-active,
+.sidebar .sidebar-link .link-item .profile-icon-active {
+    background-image: url('../images/icons/dashboard-icon.svg');
+    width: 19px;
+    height: 19px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.sidebar .sidebar-link .link-item .lesson-icon {
+    background-image: url('../images/icons/lesson-icon.svg');
+}
+
+.sidebar .sidebar-link .link-item .class-schedule-icon {
+    background-image: url('../images/icons/class-schedule-icon.svg');
+}
+
+.sidebar .sidebar-link .link-item .task-icon {
+    background-image: url('../images/icons/task-icon.svg');
+}
+
+.sidebar .sidebar-link .link-item .grade-icon {
+    background-image: url('../images/icons/grade-icon.svg');
+}
+
+.sidebar .sidebar-link .link-item .attendance-icon {
+    background-image: url('../images/icons/attendance-icon.svg');
+}
+
+.sidebar .sidebar-link .link-item .payroll-icon {
+    background-image: url('../images/icons/payroll-icon.svg');
+}
+
+.sidebar .sidebar-link .link-item .profile-icon {
+    background-image: url('../images/icons/profile-icon.svg');
+}
+
+.sidebar .sidebar-link .link-item:hover .dashboard-icon,
+.sidebar .sidebar-link .link-item.active .dashboard-icon {
+    background-image: url('../images/icons/dashboard-icon-active.svg');
+}
+
+.sidebar .sidebar-link .link-item:hover .lesson-icon,
+.sidebar .sidebar-link .link-item.active .lesson-icon {
+    background-image: url('../images/icons/lesson-icon-active.svg');
+}
+
+.sidebar .sidebar-link .link-item:hover .class-schedule-icon,
+.sidebar .sidebar-link .link-item.active .class-schedule-icon {
+    background-image: url('../images/icons/class-schedule-icon-active.svg');
+}
+
+.sidebar .sidebar-link .link-item:hover .task-icon,
+.sidebar .sidebar-link .link-item.active .task-icon {
+    background-image: url('../images/icons/task-icon-active.svg');
+}
+
+.sidebar .sidebar-link .link-item:hover .grade-icon,
+.sidebar .sidebar-link .link-item.active .grade-icon {
+    background-image: url('../images/icons/grade-icon-active.svg');
+}
+
+.sidebar .sidebar-link .link-item:hover .attendance-icon,
+.sidebar .sidebar-link .link-item.active .attendance-icon {
+    background-image: url('../images/icons/attendance-icon-active.svg');
+}
+
+.sidebar .sidebar-link .link-item:hover .payroll-icon,
+.sidebar .sidebar-link .link-item.active .payroll-icon {
+    background-image: url('../images/icons/payroll-icon-active.svg');
+}
+
+.sidebar .sidebar-link .link-item:hover .profile-icon,
+.sidebar .sidebar-link .link-item.active .profile-icon {
+    background-image: url('../images/icons/profile-icon-active.svg');
+}
+/* END SIDEBAR */
+
+
+/* HAMBURGER */
+.hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 9999px;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    z-index: 9999;
+    background-color: rgba(var(--light-color), 1);
+    border: 1px solid rgba(var(--primary-color), 1);
+}
+
+.hamburger:hover {
+    background-color: rgba(var(--light-blur-color), 1);
+}
+
+.hamburger .hamburger-icon {
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/icons/hamburger-icon.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* END HAMBURGER */
