@@ -70,18 +70,7 @@ a {
     flex-direction: column;
     background-color: rgba(var(--light-color), 1);
     padding: 32px;
-}
-
-.sidebar.mobile {
-    width: 260px;
-    position: absolute;
-    top: 0;
-    left: -260px;
-    bottom: 0;
-}
-
-.sidebar.mobile.active {
-    left: 0;
+    position: relative;
 }
 
 .sidebar .sidebar-link {
@@ -106,6 +95,7 @@ a {
 .sidebar .sidebar-link .link-item .lesson-icon,
 .sidebar .sidebar-link .link-item .class-schedule-icon,
 .sidebar .sidebar-link .link-item .task-icon,
+.sidebar .sidebar-link .link-item .task-collection-icon,
 .sidebar .sidebar-link .link-item .grade-icon,
 .sidebar .sidebar-link .link-item .attendance-icon,
 .sidebar .sidebar-link .link-item .payroll-icon,
@@ -136,6 +126,10 @@ a {
 
 .sidebar .sidebar-link .link-item .task-icon {
     background-image: url('../images/icons/task-icon.svg');
+}
+
+.sidebar .sidebar-link .link-item .task-collection-icon {
+    background-image: url('../images/icons/task-collection-icon.svg');
 }
 
 .sidebar .sidebar-link .link-item .grade-icon {
@@ -172,6 +166,11 @@ a {
 .sidebar .sidebar-link .link-item:hover .task-icon,
 .sidebar .sidebar-link .link-item.active .task-icon {
     background-image: url('../images/icons/task-icon-active.svg');
+}
+
+.sidebar .sidebar-link .link-item:hover .task-collection-icon,
+.sidebar .sidebar-link .link-item.active .task-collection-icon {
+    background-image: url('../images/icons/task-collection-icon-active.svg');
 }
 
 .sidebar .sidebar-link .link-item:hover .grade-icon,
@@ -225,3 +224,20 @@ a {
     background-size: cover;
 }
 /* END HAMBURGER */
+
+
+/* RESPONSIVE */
+@media (max-width: 767.98px) {
+    .sidebar {
+        width: 260px;
+        position: absolute;
+        top: 0;
+        left: -260px;
+        bottom: 0;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+}
+/* END RESPONSIVE */
