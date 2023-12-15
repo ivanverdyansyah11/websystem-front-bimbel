@@ -2,11 +2,11 @@
     <div class="sidebar">
         <img src="{{ asset('assets/images/brand/logo-brand.svg') }}" alt="Brand Logo" class="img-fluid" width="140">
         <div class="sidebar-link d-flex flex-column">
-            <a href="#" class="link-item d-flex align-items-center {{ Request::is('dashboard*') ? 'active' : '' }}" style="gap: 14px;">
+            <a href="/dashboard" class="link-item d-flex align-items-center {{ Request::is('dashboard*') ? 'active' : '' }}" style="gap: 14px;">
                 <div class="dashboard-icon"></div>
                 Dashboard
             </a>
-            <a href="#" class="link-item d-flex align-items-center {{ Request::is('lesson*') ? 'active' : '' }}" style="gap: 14px;">
+            <a href="/lesson" class="link-item d-flex align-items-center {{ Request::is('lesson*') ? 'active' : '' }}" style="gap: 14px;">
                 <div class="lesson-icon"></div>
                 Lesson
             </a>

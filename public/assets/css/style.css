@@ -95,6 +95,74 @@ a {
     right: 24px;
     transform: translateY(-50%);
 }
+
+.button-primary {
+    padding: 14px 20px;
+    background-color: rgba(var(--primary-color), 1);
+    border-radius: 6px;
+    color: rgba(var(--light-color), 1);
+    font-size: 0.938rem;
+}
+
+.button-primary:hover {
+    opacity: 0.94;
+}
+
+.add-icon {
+    width: 15px;
+    height: 15px;
+    background-image: url('../images/icons/add-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.table-default {
+    width: 100%;
+}
+
+.table-default .table-header {
+    background-color: rgba(var(--primary-color), 1);
+    border-radius: 6px;
+    padding: 14px;
+}
+
+.table-default .table-header .header-list {
+    width: 100%;
+    color: rgba(var(--light-color), 1);
+    font-size: 0.938rem;
+}
+
+.table-default .table-body {
+    background-color: rgba(var(--light-color), 1);
+    border-radius: 6px;
+    padding: 14px;
+}
+
+.table-default .table-body .body-list {
+    width: 100%;
+    color: rgba(var(--dark-color), 1);
+    font-size: 0.938rem;
+}
+
+.table-default .table-body .body-list .detail-icon,
+.table-default .table-body .body-list .edit-icon,
+.table-default .table-body .body-list .delete-icon {
+    width: 22px;
+    height: 22px;
+    background-image: url('../images/icons/detail-icon.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.table-default .table-body .body-list .edit-icon {
+    background-image: url('../images/icons/edit-icon.svg');
+}
+
+.table-default .table-body .body-list .delete-icon {
+    background-image: url('../images/icons/delete-icon.svg');
+}
 /* END COMPONENT */
 
 
@@ -368,6 +436,13 @@ a {
     background-color: rgba(var(--light-blur-color), 1);
 }
 /* END FILTER */
+
+/* CONTENT */
+.content {
+    margin-top: 24px;
+    padding: 0 42px;
+}
+/* END CONTENT */
 
 
 /* RESPONSIVE */
