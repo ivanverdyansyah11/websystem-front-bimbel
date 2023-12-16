@@ -469,6 +469,35 @@ a {
 }
 /* END FILTER */
 
+
+/* LOGIN */
+.card-auth {
+    background-color: rgba(var(--light-color), 1);
+    padding: 32px;
+    border-radius: 10px;
+}
+
+.card-auth .auth-title {
+    font-size: 3rem;
+    font-family: var(--semibold-font);
+    margin-bottom: 24px;
+}
+
+.card-auth .link-redirect {
+    font-size: 0.913rem;
+    color: rgba(var(--dark-color), 0.62);
+}
+
+.card-auth .link-redirect a {
+    color: rgba(var(--primary-color), 1);
+}
+
+.card-auth .link-redirect a:hover {
+    text-decoration: underline;
+}
+/* END LOGIN */
+
+
 /* CONTENT */
 .content {
     margin-top: 24px;
