@@ -6,7 +6,7 @@
                 <div class="dashboard-icon"></div>
                 Dashboard
             </a>
-            <a href="/lesson" class="link-item d-flex align-items-center {{ Request::is('lesson*') ? 'active' : '' }}" style="gap: 14px;">
+            <a href="{{ route('lesson') }}" class="link-item d-flex align-items-center {{ Request::is('lesson*') ? 'active' : '' }}" style="gap: 14px;">
                 <div class="lesson-icon"></div>
                 Lesson
             </a>

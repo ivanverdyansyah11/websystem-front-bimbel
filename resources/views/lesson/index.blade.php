@@ -5,7 +5,7 @@
         @include('components.topbar')
         @include('components.filter')
         <div class="content d-flex flex-column align-items-end gap-3">
-            <a href="#" class="button-primary d-flex align-items-center gap-2">
+            <a href="{{ route('lesson.create') }}" class="button-primary d-flex align-items-center gap-2">
                 <div class="add-icon"></div>
                 Add New
             </a>
@@ -21,8 +21,8 @@
                     <div class="body-list">Iwan Saputra</div>
                     <div class="body-list">1 Hour</div>
                     <div class="body-list d-flex gap-2">
-                        <a href="#" class="detail-icon"></a>
-                        <a href="#" class="edit-icon"></a>
+                        <a href="{{ route('lesson.detail') }}" class="detail-icon"></a>
+                        <a href="{{ route('lesson.edit') }}" class="edit-icon"></a>
                         <a href="#" class="delete-icon"></a>
                     </div>
                 </div>
@@ -31,8 +31,8 @@
                     <div class="body-list">Anita Cahyani</div>
                     <div class="body-list">2 Hour</div>
                     <div class="body-list d-flex gap-2">
-                        <a href="#" class="detail-icon"></a>
-                        <a href="#" class="edit-icon"></a>
+                        <a href="{{ route('lesson.detail') }}" class="detail-icon"></a>
+                        <a href="{{ route('lesson.edit') }}" class="edit-icon"></a>
                         <a href="#" class="delete-icon"></a>
                     </div>
                 </div>
@@ -41,8 +41,8 @@
                     <div class="body-list">Rudi Pratama</div>
                     <div class="body-list">3 Hour</div>
                     <div class="body-list d-flex gap-2">
-                        <a href="#" class="detail-icon"></a>
-                        <a href="#" class="edit-icon"></a>
+                        <a href="{{ route('lesson.detail') }}" class="detail-icon"></a>
+                        <a href="{{ route('lesson.edit') }}" class="edit-icon"></a>
                         <a href="#" class="delete-icon"></a>
                     </div>
                 </div>

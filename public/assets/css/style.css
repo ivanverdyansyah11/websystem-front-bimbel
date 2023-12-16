@@ -61,6 +61,7 @@ a {
 
 .form {
     display: inline-block;
+    width: 100%;
 }
 
 .form.search {
@@ -69,7 +70,7 @@ a {
 
 .input {
     width: 100%;
-    padding: 14px 50px 14px 24px;
+    padding: 14px 40px 14px 14px;
     color: rgba(var(--dark-color), 0.62);
     font-size: 0.938rem;
     border: 1px solid rgba(var(--dark-color), 0.12);
@@ -81,6 +82,12 @@ a {
 .input::placeholder {
     color: rgba(var(--dark-color), 0.62);
     font-size: 0.938rem;
+}
+
+.input-wrapper > label {
+    font-size: 0.938rem;
+    color: rgba(var(--dark-color), 1);
+    margin-bottom: 4px;
 }
 
 .search-wrapper .search-icon {
@@ -96,16 +103,34 @@ a {
     transform: translateY(-50%);
 }
 
-.button-primary {
+.button-primary,
+.button-primary-small,
+.button-reverse-small {
     padding: 14px 20px;
     background-color: rgba(var(--primary-color), 1);
     border-radius: 6px;
     color: rgba(var(--light-color), 1);
     font-size: 0.938rem;
+    outline: none;
+    stroke: none;
+    border: none;
 }
 
-.button-primary:hover {
-    opacity: 0.94;
+.button-primary-small,
+.button-reverse-small {
+    padding: 10px 16px;
+    font-size: 0.875rem;
+}
+
+.button-reverse-small {
+    background-color: rgba(var(--dark-color), 1);
+    color: rgba(var(--light-color), 1);
+}
+
+.button-primary:hover,
+.button-primary-small:hover,
+.button-reverse-small:hover {
+    opacity: 0.9;
 }
 
 .add-icon {
@@ -162,6 +187,12 @@ a {
 
 .table-default .table-body .body-list .delete-icon {
     background-image: url('../images/icons/delete-icon.svg');
+}
+
+.table-default .table-body .body-list .detail-icon:hover,
+.table-default .table-body .body-list .edit-icon:hover,
+.table-default .table-body .body-list .delete-icon:hover {
+    opacity: 0.8;
 }
 /* END COMPONENT */
 
@@ -337,6 +368,7 @@ a {
     width: 100%;
     padding: 24px 42px;
     background-color: rgba(var(--light-color), 1);
+    border-bottom: 1px solid rgba(var(--dark-color), 0.12);
 }
 
 .topbar h3 {
@@ -371,7 +403,6 @@ a {
 .filter {
     background-color: rgba(var(--light-color), 1);
     padding: 16px 42px;
-    border-top: 1px solid rgba(var(--dark-color), 0.12);
 }
 
 .filter .filter-category .category-button,

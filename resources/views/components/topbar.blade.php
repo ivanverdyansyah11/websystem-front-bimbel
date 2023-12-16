@@ -1,5 +1,5 @@
 <div class="topbar d-flex align-items-center justify-content-between">
-    <h3>Explore Dashboard</h3>
+    <h3>{{ isset($title_topbar) ? $title_topbar : 'Explore Dashboard' }}</h3>
     <div class="topbar-wrapper d-flex align-items-center gap-3">
         <div class="notification-wrapper d-flex align-items-center justify-content-center">
             <div class="notification-icon"></div>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LessonController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
@@ -35,6 +36,9 @@ Route::get('/dashboard', function () {
     return view('dashboard.index');
 });
 
-Route::get('/lesson', function () {
-    return view('lessons.index');
+Route::controller(LessonController::class)->group(function () {
+    Route::get('/lesson', 'index')->name('lesson');
+    Route::get('/lesson/detail', 'detail')->name('lesson.detail');
+    Route::get('/lesson/add', 'create')->name('lesson.create');
+    Route::get('/lesson/edit', 'edit')->name('lesson.edit');
 });
