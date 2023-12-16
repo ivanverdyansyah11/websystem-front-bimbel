@@ -7,8 +7,7 @@
             <div class="row">
                 <div class="col">
                     <div class="card-opening d-flex align-items-center gap-4 mb-4">
-                        <div class="banner-image-opening"></div>
-                        <img src="{{ asset('assets/images/banner/banner-graduate.svg') }}" alt="Banner Graduate" class="img-fluid" width="240">
+                        <img src="{{ asset('assets/images/banner/banner-graduate.svg') }}" alt="Banner Graduate" class="img-fluid d-none d-md-inline-block" width="240">
                         <div class="opening-wrapper">
                             <p class="opening-username m-0">Hi, Kevin Sanjaya</p>
                             <h2 class="opening-title">Welcome to Edu Learn</h2>

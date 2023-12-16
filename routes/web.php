@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\LessonController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
 
@@ -32,8 +34,8 @@ use Illuminate\Support\Facades\Route;
 //     });
 // });
 
-Route::get('/dashboard', function () {
-    return view('dashboard.index');
+Route::controller(DashboardController::class)->group(function () {
+    Route::get('/dashboard', 'index')->name('dashboard');
 });
 
 Route::controller(LessonController::class)->group(function () {
@@ -43,6 +45,6 @@ Route::controller(LessonController::class)->group(function () {
     Route::get('/lesson/edit', 'edit')->name('lesson.edit');
 });
 
-Route::get('/profile', function () {
-    return view('profile.index');
+Route::controller(ProfileController::class)->group(function () {
+    Route::get('/profile', 'index')->name('profile');
 });

@@ -826,5 +826,9 @@ a {
     .content .profile-thumbnail .thumbnail-profile {
         left: 0;
     }
+
+    .content .card-opening {
+        padding: 24px;
+    }
 }
 /* END RESPONSIVE */

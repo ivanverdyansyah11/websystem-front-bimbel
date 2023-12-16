@@ -2,7 +2,7 @@
     <div class="sidebar">
         <img src="{{ asset('assets/images/brand/logo-brand.svg') }}" alt="Brand Logo" class="img-fluid" width="140">
         <div class="sidebar-link d-flex flex-column">
-            <a href="/dashboard" class="link-item d-flex align-items-center {{ Request::is('dashboard*') ? 'active' : '' }}" style="gap: 14px;">
+            <a href="{{ route('dashboard') }}" class="link-item d-flex align-items-center {{ Request::is('dashboard*') ? 'active' : '' }}" style="gap: 14px;">
                 <div class="dashboard-icon"></div>
                 Dashboard
             </a>
@@ -34,7 +34,7 @@
                 <div class="payroll-icon"></div>
                 Payroll
             </a>
-            <a href="/profile" class="link-item d-flex align-items-center {{ Request::is('profile*') ? 'active' : '' }}" style="gap: 14px;">
+            <a href="{{ route('profile') }}" class="link-item d-flex align-items-center {{ Request::is('profile*') ? 'active' : '' }}" style="gap: 14px;">
                 <div class="profile-icon"></div>
                 Profile
             </a>
