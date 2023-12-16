@@ -52,7 +52,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4 mt-4 mt-lg-0">
                     <div class="card-calender">
                         <div class="calender-wrapper d-flex align-items-center justify-content-between">
                             <h5 class="calender-title">Calender</h5>
@@ -137,6 +137,13 @@
                             <div class="item-wrapper">
                                 <p class="item-title">You get a schedule to teach</p>
                                 <p class="item-caption">17 January, 2024 | 09:00 AM-11.OO AM</p>
+                            </div>
+                        </div>
+                        <div class="activity-item d-flex gap-2 mt-2">
+                            <img src="{{ asset('assets/images/profile/profile-image-letter.svg') }}" alt="Profile Image Letter" class="img-fluid" width="32">
+                            <div class="item-wrapper">
+                                <p class="item-title">You get a schedule to teach</p>
+                                <p class="item-caption">18 January, 2024 | 09:00 AM-11.OO AM</p>
                             </div>
                         </div>
                         <div class="activity-item d-flex gap-2 mt-2">

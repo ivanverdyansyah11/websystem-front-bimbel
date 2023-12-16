@@ -12,7 +12,7 @@
             </a>
             <a href="#" class="link-item d-flex align-items-center {{ Request::is('class-schedule*') ? 'active' : '' }}" style="gap: 14px;">
                 <div class="class-schedule-icon"></div>
-                Class Schedule
+                Schedule
             </a>
             <a href="#" class="link-item d-flex align-items-center {{ Request::is('task*') ? 'active' : '' }}" style="gap: 14px;">
                 <div class="task-icon"></div>
@@ -20,7 +20,7 @@
             </a>
             <a href="#" class="link-item d-flex align-items-center {{ Request::is('task-collection*') ? 'active' : '' }}" style="gap: 14px;">
                 <div class="task-collection-icon"></div>
-                Task Collection
+                Collection
             </a>
             <a href="#" class="link-item d-flex align-items-center {{ Request::is('grade*') ? 'active' : '' }}" style="gap: 14px;">
                 <div class="grade-icon"></div>
@@ -34,7 +34,7 @@
                 <div class="payroll-icon"></div>
                 Payroll
             </a>
-            <a href="#" class="link-item d-flex align-items-center {{ Request::is('profile*') ? 'active' : '' }}" style="gap: 14px;">
+            <a href="/profile" class="link-item d-flex align-items-center {{ Request::is('profile*') ? 'active' : '' }}" style="gap: 14px;">
                 <div class="profile-icon"></div>
                 Profile
             </a>

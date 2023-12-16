@@ -42,6 +42,7 @@ h2,
 h3,
 h4,
 h5,
+h6,
 p {
     margin-bottom: 0;
     line-height: 150% !important;
@@ -643,11 +644,154 @@ a {
     font-size: 0.875rem;
     color: rgba(var(--dark-color), 0.62);
 }
+
+.content .profile-thumbnail {
+    width: 100%;
+    height: 300px;
+}
+
+.content .profile-thumbnail .thumbnail-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 200px;
+    background-image: url('../images/profile/profile-thumbnail.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.content .profile-thumbnail .thumbnail-profile {
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+}
+
+.content .thumbnail-profile img {
+    border-radius: 9999px;
+    border: 8px solid rgba(var(--light-color), 1);
+}
+
+.content .profile-wrapper .profile-username {
+    font-size: 1.75rem;
+    line-height: 10;
+    font-family: var(--semibold-font);
+}
+
+.content .profile-wrapper .profile-role {
+    font-size: 0.913rem;
+    color: rgba(var(--dark-color), 0.62);
+}
+
+.content .info-card .card-title,
+.content .activity-card .card-title {
+    padding: 16px 22px;
+    background-color: rgba(var(--light-color), 1);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom: 1px solid rgba(var(--dark-color), 0.12);
+}
+
+.content .info-card .card-title .title,
+.content .activity-card .card-title .title {
+    font-family: var(--semibold-font);
+    font-size: 1.125rem;
+}
+
+.content .info-card .card-content,
+.content .activity-card .card-content {
+    padding: 22px;
+    background-color: rgba(var(--light-color), 1);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.content .info-card .card-content .email-icon,
+.content .info-card .card-content .phone-icon,
+.content .info-card .card-content .address-icon {
+    background-image: url('../images/icons/email-icon.svg');
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content .info-card .card-content .phone-icon {
+    background-image: url('../images/icons/phone-icon.svg');
+}
+
+.content .info-card .card-content .address-icon {
+    background-image: url('../images/icons/address-icon.svg');
+}
+
+.content .info-card .card-content .item-title {
+    color: rgba(var(--dark-color), 0.62);
+    font-family: var(--semibold-font);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+}
+
+.content .info-card .card-content .item-content {
+    font-size: 0.875rem;
+}
+
+.content .activity-card .card-content .activity {
+    font-family: var(--semibold-font);
+}
+
+.content .activity-card .card-content .caption {
+    font-size: 0.875rem;
+    color: rgba(var(--dark-color), 0.62);
+    width: fit-content;
+}
+
+.content .activity-card .card-content .caption:hover {
+    text-decoration: underline;
+}
+
+.content .activity-card .activity-item {
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(var(--dark-color), 0.12);
+    background-color: rgba(var(--light-color), 1);
+}
+
+.content .activity-card .activity-item .item-title {
+    font-family: var(--semibold-font);
+    margin-bottom: 14px;
+}
+
+.content .activity-card .activity-item .item-title:hover {
+    color: rgba(var(--primary-color), 1);
+}
+
+.content .activity-card .activity-item .user-icon,
+.content .activity-card .activity-item .time-icon {
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/icons/user-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.content .activity-card .activity-item .time-icon {
+    background-image: url('../images/icons/time-icon.svg');
+}
+
+.content .activity-card .activity-item .value {
+    font-size: 0.875rem;
+    color: rgba(var(--dark-color), 0.62);
+}
 /* END CONTENT */
 
 
 /* RESPONSIVE */
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
     .sidebar {
         width: 260px;
         position: absolute;
@@ -663,6 +807,10 @@ a {
 }
 
 @media (max-width: 575.98px) {
+    .content {
+        padding: 0 24px;
+    }
+
     .topbar {
         padding: 24px;
     }
@@ -673,6 +821,10 @@ a {
 
     .form.search {
         width: 100%;
+    }
+
+    .content .profile-thumbnail .thumbnail-profile {
+        left: 0;
     }
 }
 /* END RESPONSIVE */

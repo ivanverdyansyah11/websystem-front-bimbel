@@ -42,3 +42,7 @@ Route::controller(LessonController::class)->group(function () {
     Route::get('/lesson/add', 'create')->name('lesson.create');
     Route::get('/lesson/edit', 'edit')->name('lesson.edit');
 });
+
+Route::get('/profile', function () {
+    return view('profile.index');
+});
