@@ -245,7 +245,7 @@ a {
 .sidebar .sidebar-link .link-item .attendance-icon-active,
 .sidebar .sidebar-link .link-item .payroll-icon-active,
 .sidebar .sidebar-link .link-item .profile-icon-active {
-    background-image: url('../images/icons/dashboard-icon.svg');
+    background-image: url('../images/sidebar/dashboard-icon.svg');
     width: 19px;
     height: 19px;
     background-repeat: no-repeat;
@@ -254,80 +254,80 @@ a {
 }
 
 .sidebar .sidebar-link .link-item .lesson-icon {
-    background-image: url('../images/icons/lesson-icon.svg');
+    background-image: url('../images/sidebar/lesson-icon.svg');
 }
 
 .sidebar .sidebar-link .link-item .class-schedule-icon {
-    background-image: url('../images/icons/class-schedule-icon.svg');
+    background-image: url('../images/sidebar/class-schedule-icon.svg');
 }
 
 .sidebar .sidebar-link .link-item .task-icon {
-    background-image: url('../images/icons/task-icon.svg');
+    background-image: url('../images/sidebar/task-icon.svg');
 }
 
 .sidebar .sidebar-link .link-item .task-collection-icon {
-    background-image: url('../images/icons/task-collection-icon.svg');
+    background-image: url('../images/sidebar/task-collection-icon.svg');
 }
 
 .sidebar .sidebar-link .link-item .grade-icon {
-    background-image: url('../images/icons/grade-icon.svg');
+    background-image: url('../images/sidebar/grade-icon.svg');
 }
 
 .sidebar .sidebar-link .link-item .attendance-icon {
-    background-image: url('../images/icons/attendance-icon.svg');
+    background-image: url('../images/sidebar/attendance-icon.svg');
 }
 
 .sidebar .sidebar-link .link-item .payroll-icon {
-    background-image: url('../images/icons/payroll-icon.svg');
+    background-image: url('../images/sidebar/payroll-icon.svg');
 }
 
 .sidebar .sidebar-link .link-item .profile-icon {
-    background-image: url('../images/icons/profile-icon.svg');
+    background-image: url('../images/sidebar/profile-icon.svg');
 }
 
 .sidebar .sidebar-link .link-item:hover .dashboard-icon,
 .sidebar .sidebar-link .link-item.active .dashboard-icon {
-    background-image: url('../images/icons/dashboard-icon-active.svg');
+    background-image: url('../images/sidebar/dashboard-icon-active.svg');
 }
 
 .sidebar .sidebar-link .link-item:hover .lesson-icon,
 .sidebar .sidebar-link .link-item.active .lesson-icon {
-    background-image: url('../images/icons/lesson-icon-active.svg');
+    background-image: url('../images/sidebar/lesson-icon-active.svg');
 }
 
 .sidebar .sidebar-link .link-item:hover .class-schedule-icon,
 .sidebar .sidebar-link .link-item.active .class-schedule-icon {
-    background-image: url('../images/icons/class-schedule-icon-active.svg');
+    background-image: url('../images/sidebar/class-schedule-icon-active.svg');
 }
 
 .sidebar .sidebar-link .link-item:hover .task-icon,
 .sidebar .sidebar-link .link-item.active .task-icon {
-    background-image: url('../images/icons/task-icon-active.svg');
+    background-image: url('../images/sidebar/task-icon-active.svg');
 }
 
 .sidebar .sidebar-link .link-item:hover .task-collection-icon,
 .sidebar .sidebar-link .link-item.active .task-collection-icon {
-    background-image: url('../images/icons/task-collection-icon-active.svg');
+    background-image: url('../images/sidebar/task-collection-icon-active.svg');
 }
 
 .sidebar .sidebar-link .link-item:hover .grade-icon,
 .sidebar .sidebar-link .link-item.active .grade-icon {
-    background-image: url('../images/icons/grade-icon-active.svg');
+    background-image: url('../images/sidebar/grade-icon-active.svg');
 }
 
 .sidebar .sidebar-link .link-item:hover .attendance-icon,
 .sidebar .sidebar-link .link-item.active .attendance-icon {
-    background-image: url('../images/icons/attendance-icon-active.svg');
+    background-image: url('../images/sidebar/attendance-icon-active.svg');
 }
 
 .sidebar .sidebar-link .link-item:hover .payroll-icon,
 .sidebar .sidebar-link .link-item.active .payroll-icon {
-    background-image: url('../images/icons/payroll-icon-active.svg');
+    background-image: url('../images/sidebar/payroll-icon-active.svg');
 }
 
 .sidebar .sidebar-link .link-item:hover .profile-icon,
 .sidebar .sidebar-link .link-item.active .profile-icon {
-    background-image: url('../images/icons/profile-icon-active.svg');
+    background-image: url('../images/sidebar/profile-icon-active.svg');
 }
 /* END SIDEBAR */
 
@@ -472,6 +472,176 @@ a {
 .content {
     margin-top: 24px;
     padding: 0 42px;
+}
+
+.content .card-opening {
+    background-color: rgba(var(--light-color), 1);
+    border-radius: 10px;
+    padding: 0 32px 0 0;
+}
+
+.content .card-opening .opening-username {
+    color: rgba(var(--dark-color), 0.42);
+    font-size: 0.875rem;
+}
+
+.content .card-opening .opening-title {
+    font-size: 2rem;
+    font-family: var(--semibold-font);
+    margin-bottom: 8px;
+}
+
+.content .card-opening .paragraph {
+    font-size: 0.938rem;
+    color: rgba(var(--dark-color), 0.62);
+}
+
+.content .card-statistic,
+.content .card-calender {
+    background-color: rgba(var(--light-color), 1);
+    border-radius: 10px;
+    padding: 24px 20px;
+}
+
+.content .card-statistic .statistic-title,
+.content .card-calender .calender-title,
+.content .card-calender .activity-title {
+    font-size: 1.125rem;
+    font-family: var(--semibold-font);
+}
+
+.content .card-statistic .link-default,
+.content .card-calender .link-default {
+    font-size: 0.875rem;
+    color: rgba(var(--primary-color), 1);
+    font-family: var(--semibold-font);
+}
+
+.content .card-statistic .link-default:hover,
+.content .card-calender .link-default:hover {
+    text-decoration: underline;
+}
+
+.content .card-statistic .statistic-item {
+    border: 1px solid rgba(var(--dark-color), 0.12);
+    padding: 18px;
+    border-radius: 8px;
+    background-color: rgba(var(--light-color), 1);
+}
+
+.content .card-statistic .statistic-item .card-title {
+    font-size: 0.913rem;
+    font-family: var(--semibold-font);
+}
+
+.content .card-statistic .statistic-item .caption {
+    font-size: 0.813rem;
+    color: rgba(var(--dark-color), 0.62);
+}
+
+.content .card-statistic .statistic-item .button-small {
+    padding: 4px 20px;
+    background-color: rgba(var(--light-blur-color), 1);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    stroke: none;
+    font-size: 0.875rem;
+}
+
+.content .card-statistic .statistic-item progress {
+    background-color: transparent;
+}
+
+.content .card-statistic .statistic-item progress::-webkit-progress-bar {
+    background-color: #CBD2DD;
+    border-radius: 9999px;
+    height: 12px;
+}
+
+.content .card-statistic .statistic-item progress::-webkit-progress-value {
+    background-color: #465F85;
+    border-radius: 9999px;
+}
+
+.content .card-calender .arrow-icon-down {
+    width: 18px;
+    height: 18px;
+    background-image: url('../images/icons/arrow-icon-down.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.content .card-calender .arrow-icon-down:hover {
+    opacity: 0.9;
+}
+
+.content .card-calender .calender-year {
+    border-bottom: 1px solid rgba(var(--dark-color), 0.12);
+    padding-bottom: 4px;
+}
+
+.content .card-calender .calender-year .year {
+    font-size: 0.875rem;
+    color: rgba(var(--dark-color), 0.62);
+}
+
+.content .card-calender .calender-year .arrow-icon-left,
+.content .card-calender .calender-year .arrow-icon-right {
+    width: 18px;
+    height: 18px;
+    background-image: url('../images/icons/arrow-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.content .card-calender .calender-year .arrow-icon-left {
+    rotate: 180deg;
+}
+
+.content .card-calender .calender-year .arrow-icon-left:hover,
+.content .card-calender .calender-year .arrow-icon-right:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.content .card-calender .calender-date .date-wrapper > p {
+    width: 100%;
+    text-transform: capitalize;
+    font-size: 0.875rem;
+    text-align: center;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 9999px;
+}
+
+.content .card-calender .calender-date .date-wrapper:first-child > p {
+    font-family: var(--semibold-font);
+    cursor: text;
+}
+
+.content .card-calender .calender-date .date-wrapper:not(:first-child) > p.active,
+.content .card-calender .calender-date .date-wrapper:not(:first-child) > p:hover {
+    background-color: #456086;
+    color: rgba(var(--light-color), 1);
+}
+
+.content .card-calender .activity-item {
+    border: 1px solid rgba(var(--dark-color), 0.12);
+    padding: 16px 12px;
+    border-radius: 8px;
+}
+
+.content .card-calender .activity-item .item-title {
+    font-size: 0.913rem;
+    font-family: var(--semibold-font);
+}
+
+.content .card-calender .activity-item .item-caption {
+    font-size: 0.875rem;
+    color: rgba(var(--dark-color), 0.62);
 }
 /* END CONTENT */
 
